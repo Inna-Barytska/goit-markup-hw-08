@@ -1,0 +1,55 @@
+.text-footer {
+  color: var(--accent-color);
+}
+footer {
+  background-color: var(--bgc-color);
+}
+.footer-contact {
+  @include font(14px, 500, 1.7, null);
+  color: var(--footer-contact);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-item {
+  margin-bottom: 8px;
+}
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  color: var(--text-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.social-networks {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.join {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.footer-about {
+  display: flex;
+}
+.footer-sn {
+  margin-left: 70px;
+}
+.sn-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
