@@ -1,5 +1,5 @@
 .footer-form {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 .sub-svg {
   background-color: var(--accent-color);
@@ -15,6 +15,13 @@
   color: var(--text-color);
   margin-bottom: 20px;
 }
+.sub-form {
+  display: inline-flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
 .sub-input {
   width: 358px;
   height: 50px;
@@ -24,6 +31,7 @@
   padding-left: 16px;
   outline: none;
   margin-right: 12px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   &:focus,
   &:hover {

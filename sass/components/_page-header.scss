@@ -1,9 +1,12 @@
 header {
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 .nav-container__logo {
   font-family: "Raleway", sans-serif;
   @include font(26px, 700, 1.2, null);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .nav-container__text {
   color: var(--accent-color);
@@ -72,6 +75,9 @@ header {
 .contact {
   display: flex;
   margin-left: auto;
+}
+.contact__item {
+  display: none;
 }
 .contact__item + .contact__item {
   margin-left: 50px;
