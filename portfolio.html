@@ -25,7 +25,7 @@
         <a class="nav-container__logo logo--dark link" href=""
           ><span class="nav-container__text">Web</span>Studio</a
         >
-        <nav>
+        <nav class="navigation">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link link" href="./index.html">Студия</a>
@@ -56,6 +56,53 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav-list">
+            <li class="mob-nav-list__item">
+              <a class="mob-nav-list__link link current" href="">Студия</a>
+            </li>
+            <li class="mob-nav-list__item">
+              <a class="mob-nav-list__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-nav-list__item">
+              <a class="mob-nav-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu-wrap">
+            <ul class="mob-contact">
+              <li class="mob-contact__item">
+                <a class="mob-mail__link link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-contact__item">
+                <a class="mob-contact__link link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-list">
+              <li class="soc-item">Instagram</li>
+              <li class="soc-item">Twitter</li>
+              <li class="soc-item">Facebook</li>
+              <li class="soc-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <div class="wrapper">
@@ -394,5 +441,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
