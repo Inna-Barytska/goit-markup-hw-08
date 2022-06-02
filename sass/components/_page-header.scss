@@ -2,6 +2,18 @@ header {
   border-bottom: 1px solid #ececec;
   height: 80px;
 }
+.navigation {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.nav-container {
+  // position: relative;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+}
 .nav-container__logo {
   font-family: "Raleway", sans-serif;
   @include font(26px, 700, 1.2, null);
